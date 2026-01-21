@@ -1,0 +1,80 @@
+/////////////////////////////////////////////////////////////
+//
+// Description :
+// -------------
+//    Generate raw text files from ACSM acquisition software
+//
+// Copyright (©) 2022:
+// -------------------
+//     Commissariat à l'énergie atomique et aux énergies alternatives (CEA) ;
+//     Centre national de la recherche scientifique (CNRS)
+// 
+// Author(s) :
+// --------
+//     CEA/LSCE Jean-Eudes Petit, jean-hyphen-eudes-dot-petit-at-lsce-dot-ipsl-dot-fr
+//
+// License :
+// -------------
+//    This program is free software: you can redistribute it and/or modify
+//    it under the terms of the GNU Affero General Public License as published
+//    by the Free Software Foundation, either version 3 of the License, or
+//    (at your option) any later version.
+//
+//    This program is distributed in the hope that it will be useful,
+//    but WITHOUT ANY WARRANTY; without even the implied warranty of
+//    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//    GNU Affero General Public License for more details.
+//
+//    You should have received a copy of the GNU Affero General Public License
+//    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+//
+//
+// History :
+// ---------
+//   v4.0.2 : 2022/06/29
+//     - first official release
+//
+//   v4.1 : 2022/07/27
+//     - bug correction on PMF input generation
+//   v4.2 : 
+//     - SoFi RT
+//   v4.2.2 : 
+//     - CE export (forgot to do it before)
+//     - check box variable bug (PMF & SoFi)
+//     - correctly naming RT SoFi files (with station name & SN)
+//     - extract org m/z only for SoFi
+//   v4.2.3 : 
+//     - check for airbeam & RIT corrections before starting background task
+//   v4.3: 
+//     - Pump & Dryer data active
+//     - error : quadratic sum replaced by regular sum
+//     - added a check for wrong SN
+//     - added max mz for org mx
+//     - added checking rate variable
+//   v4.3.1: 
+//     - mz28 in OrgMx for SoFi (forgotten before)
+//   v4.3.2: 
+//     - CDCE correction for Orgmx (forgot to do it for SoFi, when a file already exists)
+//   v4.3.3: 
+//     - check fragtable version in order to export the right org mx for PMF
+//   v4.3.4: 
+//     - corrected bugs from ExportSoFi
+//   v4.3.5: 
+//     - corrected bugs from ExportSoFi. Compatibility with Igor7
+//     - Changed names of 2 functions for dryer data, for AASQA procedure compatibility
+//   v4.3.6: 
+//     - check for mzbool (sometimes the wave is not saved at the right place, when the acquisition is running)
+//    v4.3.7: 
+//     - simulate export from previous data.
+//    v4.3.8: 
+//     - enabled pump data loading & exporting
+//     - enabled dryer data loading & exporting
+//     - NoteBook
+//     - if CEdry=NaN, replaced by 0.5
+//    v4.3.9: 
+//     - Save Configuration in textfile
+//     - Load Configuration from textfile
+//    v4.3.10: 
+//     - Export Ref RF value from AB correction (the one used for calculating concentrations) in place of Masscalib.
+
+/////////////////////////////////////////////////////////////
