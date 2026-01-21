@@ -1,0 +1,51 @@
+/////////////////////////////////////////////////////////////
+//
+// Description :
+// -------------
+//    Generate raw text files from ACSM acquisition software
+//
+// Copyright (©) 2022:
+// -------------------
+//     Université Aix-Marseille I (AMU)
+//     Commissariat à l'énergie atomique et aux énergies alternatives (CEA) ;
+//     Centre national de la recherche scientifique (CNRS);
+// 
+// Author(s) :
+// --------
+//     AMU Benjamin Chazeau, benjamin-dot-chazeau-at-univ-hyphen-amu-dot-fr
+//     CEA/LSCE Jean-Eudes Petit, jean-hyphen-eudes-dot-petit-at-lsce-dot-ipsl-dot-fr
+//
+// License :
+// -------------
+//    This program is free software: you can redistribute it and/or modify
+//    it under the terms of the GNU Affero General Public License as published
+//    by the Free Software Foundation, either version 3 of the License, or
+//    (at your option) any later version.
+//
+//    This program is distributed in the hope that it will be useful,
+//    but WITHOUT ANY WARRANTY; without even the implied warranty of
+//    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//    GNU Affero General Public License for more details.
+//
+//    You should have received a copy of the GNU Affero General Public License
+//    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+//
+//
+// History :
+// ---------
+//   v1.1.0 : 2022/10/27
+//     - first official release
+//     - compatible only with twV2_3_18_daq2_instr4_ACSM.ipf v40
+//   v1.1.1 : 2023/04/28
+//     - export of mz28 in SoFi itx (it was missing before)
+//   v1.2 : 2023/05/08
+//     - new panel
+//     - CDCE correction
+//     - Dryer data
+//   v1.3 : 2025/09/18
+//     - change of export variables. Now consistent with Annual textfile
+//   v1.4 : 2026/01/21
+//     - added export of species in SoFiRT files
+//     - corrected counting for checking rate
+//
+/////////////////////////////////////////////////////////////
